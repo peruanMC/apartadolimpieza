@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Lo De Jorgito</title>
+    <link rel="shortcut icon" href="imagenes/imglogo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- barra de navegacion -->
+    <header class="barra_navegacion">
+        <nav class="navbar navbar-expand-lg barranav">
+            <div class="container-fluid">
+                <!-- inicio,ofertas,precios congelados y categorias a la derecha de la barra -->
+                <div class="logo-izquierda">
+                  <a class="navbar-brand imglogo" href="index.html"><img src="imagenes/imglogo" alt="" class="jorgelogo"></a>
+                </div>
+                <div class="items-barranav">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" id="inicio">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ofertas">Ofertas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#preciosjustos">Precios Justos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sobre Nosotros
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Como Empezamos</a></li>
+                          <li><a class="dropdown-item" href="sucursales.html">Sucursales</a></li>
+                          <li><a class="dropdown-item" href="#contacto">Contactanos</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- carrusel -->
+    <section class="carrusel">
+      <!-- boton modo oscuro y claro -->
+      <div class="modooscuro-izquierda">
+        <button class="botonDiaNoche" id="botonDark">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+              <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <!-- titiulo del carrusel -->
+      <div class="titulolimp">
+        <h1 id="LIMPIEZA">
+            LIMPIEZA
+        </h1>
+    </div>
+   
+     
+
+   
+
+         
+    <!-- seccion ofertas del dia -->
+    <section class="ofertasdeldia-preciosjusto" id="ofertas">
+      <!-- titulo de la seccion ofertas del dia -->
+      <h1 id="tituloofertas">Ofertas Del Día</h1>
+      <div class="contenedor-ofertasdeldia-preciosjusto">
+        <!-- card de producto de cafe -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgcafe.png" alt="">
+          <h3>NESCAFE</h3>
+          <p>Café instantáneo Suave Nescafé Dolca 170 Gr.</p>
+          <h4>$ 1.300 <span>$̶ ̶2̶.̶1̶7̶0̶</span></h4>
+          <a href="cafe.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de producto chocolatada -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/ayudin gel.png" alt="">
+          <h3>AYUDIN GEL</h3>
+          <p>Lavandina en gel ayudin, disponibe en 450ml, 750ml, y 1500ml </p>
+          <h4>$ 1300<span>$̶ ̶1̶50̶0̶</span></h4>
+          <a href="chocolatada.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de producto queso finlandia -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/ayudin liquido.png" alt="">
+          <h3>AYUDIN LIQUIDO</h3>
+          <p>Lavandina liquida ayudin, disponible en 1L, y 2L</p>
+          <h4>$ 900 <span>$̶ ̶1100</span></h4>
+          <a href="quesofinlandia.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de producto milanesa de soja -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgmilanesa.png" alt="" id="milanesadesojaimg">
+          <h3>GRANJA DEL SOL</h3>
+          <p>Milanesas de Soja con Espinaca Granja del Sol 330 Grs.</p>
+          <h4>$ 680 <span>$̶ ̶8̶5̶0̶</span></h4>
+          <a href="milanesa.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de producto de manteca -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgmanteca.png" alt="" id="mantecaimg">
+          <h3>TONADITA</h3>
+          <p>Manteca Tonadita 200 Gr.</p>
+          <h4>$ 500 <span>$̶ ̶6̶5̶0̶</span></h4>
+          <a href="manteca.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de producto de jugo en polvo -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgjugo.png" alt="">
+          <h3>CLIGHT</h3>
+          <p>Jugo en Polvo Clight Manzana 7 Gr.</p>
+          <h4>$ 62 <span>$̶ ̶8̶2̶</span></h4>
+          <a href="jugo.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion precios justos -->
+    <section class="ofertasdeldia-preciosjusto" id="preciosjustos">
+      <!-- titulo de precios -->
+      <h1 id="titulopreciosjustos">Precios Justos</h1>
+      <div class="contenedor-ofertasdeldia-preciosjusto">
+        <!-- card de aceite cañuelas -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgaceite.png" alt="" id="aceiteimg">
+          <h3>CAÑUELAS</h3>
+          <p>Aceite Girasol Cañuelas x 1,5 Lt.</p>
+          <h4>$ 625</h4>
+          <a href="aceite.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de gaseosa h20h -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imggaseosa.png" alt="">
+          <h3>CITRUS</h3>
+          <p>Agua Saborizada Citrus con Gas H2Oh x 2,25 Lt.</p>
+          <h4>$ 445</h4>
+          <a href="h20.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de alfajor terrabusi -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgalfajor.png" alt="" id="alfajorimg">
+          <h3>TERRABUSI</h3>
+          <p>Alfajor Torta Triple Terrabusi x 70 Gr.</p>
+          <h4>$ 105</h4>
+          <a href="alfajor.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de arroz -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgarroz.png" alt="">
+          <h3>MOLINOS ALA</h3>
+          <p>Arroz Largo Fino Molinos Ala x 1 Gg.</p>
+          <h4>$ 500</h4>
+          <a href="arroz.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card de azucar -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imgazucar.png" alt="" id="azucarimg">
+          <h3>CHANGO</h3>
+          <p>Azúcar Común Tipo A Changuito x 500 Gr.</p>
+          <h4>$ 430</h4>
+          <a href="azucar.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+
+        <!-- card 9 de oro galletitas -->
+        <div class="card-ofertasdeldia-preciosjusto">
+          <img src="imagenes/imggalletitas.png" alt="" id="galletitasimg">
+          <h3>9 DE ORO</h3>
+          <p>Bizcochos Clásicos 9 de Oro x 200 Gr.</p>
+          <h4>$ 210</h4>
+          <a href="galletitas.html">
+            <button type="button" class="btn">Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- barra de busqueda de productos -->
+    <section class="barradebusqueda">
+      <!-- titulo -->
+      <h1>Encontra lo que Necesitas</h1>
+      <!-- subtitulo -->
+      <h4>Explora Nuestro Catálogo</h4>
+      <!-- instruccion para que vuelvan a aparecer los productos -->
+      <h5>Para mostrar nuevamente todos los productos, simplemente presione la tecla Escape después de hacer click en el buscador.</h5>
+      <!-- baraa de busqueda -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="buscador">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- seccion de contacto -->
+    <section id="contacto">
+      <div class="row">
+        <div class="col">
+          <!-- titulo -->
+          <div class="titulo">
+            <h5>Si Tenes Alguna Duda</h5>
+            <h2>Contactanos Por Algun Producto o Devoluciones</h2>
+          </div>
+          <!-- formulario -->
+          <div class="formulario-registro">
+            <form action="https://formsubmit.co/jl7328241@gmail.com" method="post">
+              <label for="Nombre">Nombre y Apellido</label>
+              <input class="controles" type="text" name="Nombre" id="" required>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-6 col-sm-3">
+                    <div class="form-izquierda">
+                      <label for="Provincia">Provincia</label>
+                    </div>
+                    <select class="controles" name="Provincia" id="" required>
+                     <option value="Seleccionar">Seleccionar</option>
+                     <option value="Buenos Aires"> Buenos Aires</option>
+                     <option value="Catamarca">Catamarca</option>
+                     <option value="Chaco">Chaco</option>
+                     <option value="Chubut">Chubut</option>
+                     <option value="Córdoba">Córdoba</option>
+                     <option value="Corrientes">Corrientes</option>
+                     <option value="Entre Ríos">Entre Ríos</option>
+                     <option value="Formosa">Formosa</option>
+                     <option value="Jujuy">Jujuy</option>
+                     <option value="La Pampa">La Pampa</option>
+                     <option value="La Rioja">La Rioja</option>
+                     <option value="Mendoza">Mendoza</option>
+                     <option value="Misiones">Misiones</option>
+                     <option value="Neuquén">Neuquén</option>
+                     <option value="Río Negro">Río Negro</option>
+                     <option value="Salta">Salta</option>
+                     <option value="San Juan">San Juan</option>
+                     <option value="San Luis">San Luis</option>
+                     <option value="Santa Cruz">Santa Cruz</option>
+                     <option value="Santa Fe">Santa Fe</option>
+                     <option value="Santiago del Estero">Santiago del Estero</option>
+                     <option value="Tierra del Fuegor">Tierra del Fuego</option>
+                     <option value="Tucumán">Tucumán</option>
+                    </select>
+                  </div>
+
+                  <!-- columnas de provincia,ciudad,mail y telefono -->
+                  <div class="col-6 col-sm-3">
+                    <div class="form-izquierda">
+                      <label for="Ciudad">Ciudad</label>
+                    </div>
+                    <input class="controles" type="text" name="Ciudad" id="" required>
+                  </div>
+              
+                  <!-- Force next columns to break to new line -->
+                  <div class="w-100"></div>
+              
+                  <div class="col-6 col-sm-3">
+                    <div class="form-izquierda">
+                      <label for="Email">Email</label>
+                    </div>
+                    <input class="controles" type="email" name="Email" id="" required>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="form-izquierda">
+                      <label for="Telefono">Telefono</label>
+                    </div>
+                    <input class="controles" type="number" name="Telefono" id="" required>
+                  </div>
+                </div>
+              </div>
+              <label for="Consulta">Consulta</label>
+              <textarea class="controles" name="Consulta" id="" cols="" rows="2" required></textarea>
+              <div class="boton-derecha">
+                <input class="boton" type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+    </section>
+
+    <section>
+      <footer>
+        <!-- footer -->
+        <div class="footer-contenido">
+            <h3 id="titulofooter">Copyright ©2023. designe by Jorge Team</h3>
+            <h4 id="segundotitulo">Seguinos en Nuestras Redes Sociales:</h4>
+            <ul class="redessociales">
+                <li>
+                  <a href="https://www.instagram.com/lode.jorgito/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D">
+                    <img src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/lodejorgito">
+                    <img src="https://icons.getbootstrap.com/assets/icons/twitter.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="https://icons.getbootstrap.com/assets/icons/whatsapp.svg" alt="">
+                  </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- parte baja del footer -->
+        <div class="footer-boton">
+            <p>todos los derechos de autor estan reservados</p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
